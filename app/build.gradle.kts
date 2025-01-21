@@ -1,3 +1,4 @@
+import java.util.Properties
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -6,6 +7,11 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
 
+}
+val secretPropertiesFile: File = rootProject.file("secrets.properties")
+val sitProps = Properties()
+secretPropertiesFile.inputStream().use { input ->
+    sitProps.load(input)
 }
 
 android {
@@ -20,7 +26,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "BASE_URL", "\"https://rickandmortyapi.com/api/\"")
+        buildConfigField("String", "prefpassword", sitProps.getProperty("prefPassword"))
+        buildConfigField("String", "prefName", sitProps.getProperty("prefName"))
+        buildConfigField("String", "CAT_API_KEY", sitProps.getProperty("CAT_API_KEY"))
+        buildConfigField("String", "catBaseUrl", sitProps.getProperty("catBaseUrl"))
+        buildConfigField("String", "BASE_URL", sitProps.getProperty("BASE_URL"))
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -28,9 +38,13 @@ android {
 
     flavorDimensions += "version"
     productFlavors {
-        create("develop") {
+        create("india") {
             dimension = "version"
-            buildConfigField("String", "API_KEY", "\"59cd6896d8432f9c69aed9b86b9c2931\"")
+            buildConfigField("String", "API_KEY", sitProps.getProperty("API_KEY"))
+        }
+        create("usa") {
+            dimension = "version"
+            buildConfigField("String", "API_KEY", sitProps.getProperty("API_KEY"))
         }
     }
 

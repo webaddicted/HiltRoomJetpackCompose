@@ -37,6 +37,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.webaddicted.hiltroomjetpackcompose.BuildConfig
 import com.webaddicted.hiltroomjetpackcompose.data.apiutils.ApiResponse
 import com.webaddicted.hiltroomjetpackcompose.data.model.character.CharacterResult
 import com.webaddicted.hiltroomjetpackcompose.ui.theme.HiltRoomJetpackComposeTheme
@@ -62,6 +63,7 @@ class HomeActivity : ComponentActivity() {
 @Composable
 fun CharacterScreen(viewModel: HomeViewModel) {
     val context = LocalContext.current
+    context.showToast(BuildConfig.API_KEY)
     val characterState = viewModel.characterState.collectAsStateWithLifecycle()
 
     LaunchedEffect(Unit) {
