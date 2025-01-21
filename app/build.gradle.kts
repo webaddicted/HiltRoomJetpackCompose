@@ -1,18 +1,19 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.hilt.android)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
+
 }
 
 android {
-    namespace = "com.webaddicted.jectpackcompose"
+    namespace = "com.example.hiltroomjetpackcompose"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.webaddicted.jectpackcompose"
+        applicationId = "com.example.hiltroomjetpackcompose"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -62,10 +63,23 @@ android {
         buildConfig = true
         compose = true
     }
-
     room {
         schemaDirectory("$projectDir/schemas")
     }
+//    not require
+//    composeOptions {
+//        kotlinCompilerExtensionVersion = "1.5.8"
+//
+//    }
+//    packaging {
+//        resources {
+//            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+//        }
+//    }
+//
+//    ksp {
+//        arg("room.schemaLocation", projectDir.resolve("schemas").absolutePath)
+//    }
 }
 
 dependencies {
@@ -78,10 +92,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.material.icons.extended)
-    implementation(libs.androidx.navigation.runtime.ktx)
-    implementation(libs.androidx.navigation.compose)
-    //    Testing
+//    Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -89,6 +100,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.androidx.material.icons.extended)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
 
     // Retrofit and Networking
     implementation(libs.retrofit)
@@ -113,6 +128,5 @@ dependencies {
 
     // Location Services
     implementation(libs.play.services.location)
-
 
 }
