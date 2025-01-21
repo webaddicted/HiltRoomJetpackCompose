@@ -1,4 +1,4 @@
-# 🌟 Android Clean Architecture News App 🚀
+# 🌟 Android Clean Architecture Jetpack Compose App 🚀
 
 A **boilerplate Android news app** built with the latest technologies and methodologies recommended by Google.
 
