@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.hiltroomjetpackcompose"
+    namespace = "com.webaddicted.hiltroomjetpackcompose"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.hiltroomjetpackcompose"
+        applicationId = "com.webaddicted.hiltroomjetpackcompose"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
