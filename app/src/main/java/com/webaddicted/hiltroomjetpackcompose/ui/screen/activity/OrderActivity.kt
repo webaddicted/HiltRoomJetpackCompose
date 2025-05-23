@@ -12,12 +12,14 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -120,12 +122,12 @@ class OrderActivity : BaseActivity() {
     @Composable
     fun RecommendationList(list: List<EcomModel.Item?>?) {
         val context = LocalContext.current
-        LazyVerticalGrid(
-            columns = GridCells.Fixed(2),
+        LazyColumn(
+           // columns = GridCells.Fixed(2),
             modifier = Modifier
                 .padding(start = 8.dp, end = 2.dp)
                 .fillMaxSize(),
-            horizontalArrangement = Arrangement.spacedBy(2.dp)
+           // horizontalArrangement = Arrangement.spacedBy(2.dp)
         ) {
             items(list?.size ?: 0) { index ->
                 val listItem = list?.get(index)
@@ -143,7 +145,7 @@ class OrderActivity : BaseActivity() {
                     Box(
                         modifier = Modifier
                             .padding(8.dp)
-                            .height(230.dp)
+                            .height(130.dp)
                             .background(
                                 color = colorResource(R.color.lightGrey),
                                 shape = RoundedCornerShape(10.dp)
@@ -151,74 +153,65 @@ class OrderActivity : BaseActivity() {
                             .padding(8.dp)
                             .clip(RoundedCornerShape(10.dp))
                     ) {
-                        Column(
+                        Row(
                             modifier = Modifier
                         ) {
-                            Box {
+
                                 AsyncImage(
                                     model = listItem?.picUrl?.firstOrNull() ?: "",
                                     contentDescription = "",
                                     contentScale = ContentScale.Crop,
                                     modifier = Modifier
-                                        .height(175.dp)
+                                        .fillMaxHeight()
+                                        .width(130.dp)
                                         .background(
                                             color = colorResource(R.color.lightGrey),
                                             shape = RoundedCornerShape(10.dp)
                                         )
                                         .clip(RoundedCornerShape(10.dp)),
                                 )
-
-                                // Favorite icon in top right corner
-                                Icon(
-                                    imageVector = Icons.Outlined.Favorite,
-                                    contentDescription = "Favorite",
-                                    tint = colorResource(R.color.purple),
-                                    modifier = Modifier
-                                        .align(Alignment.TopEnd)
-                                        .padding(8.dp)
-                                        .size(24.dp)
-                                        .clickable {
-                                            // Favorite functionality can be added here
-                                        }
-                                )
-                            }
-                            androidx.compose.material3.Text(
-                                listItem?.title ?: "",
-                                color = Color.Black,
-                                fontSize = 16.sp,
-                                fontWeight = FontWeight.W600,
-                                maxLines = 1,
-                                overflow = TextOverflow.Ellipsis,
-                                modifier = Modifier.padding(top = 2.dp)
-                            )
-                            Row(
-                                modifier = Modifier
-                                    .fillMaxSize(),
-                                horizontalArrangement = Arrangement.SpaceBetween
+                            Column(
+                                modifier = Modifier,
+                                verticalArrangement = Arrangement.Center
                             ) {
-                                Row {
-                                    Image(
-                                        painter = painterResource(R.drawable.star),
-                                        contentDescription = "Rating",
-                                        modifier = Modifier.align(
-                                            Alignment.CenterVertically
-                                        )
-                                    )
-                                    Spacer(modifier = Modifier.width(4.dp))
-                                    androidx.compose.material3.Text(
-                                        text = listItem?.rating.toString(),
-                                        color = Color.Gray,
-                                        fontWeight = FontWeight.W500,
-                                        fontSize = 15.sp
-                                    )
-                                }
                                 androidx.compose.material3.Text(
-                                    text = "₹${listItem?.price.toString()}",
-                                    color = colorResource(R.color.purple),
+                                    listItem?.title ?: "",
+                                    color = Color.Black,
                                     fontSize = 16.sp,
-                                    fontWeight = FontWeight.Bold
+                                    fontWeight = FontWeight.W600,
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis,
+                                    modifier = Modifier.padding(top = 2.dp)
                                 )
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxSize(),
+                                    horizontalArrangement = Arrangement.SpaceBetween
+                                ) {
+                                    Row {
+                                        Image(
+                                            painter = painterResource(R.drawable.star),
+                                            contentDescription = "Rating",
+                                            modifier = Modifier.align(
+                                                Alignment.CenterVertically
+                                            )
+                                        )
+                                        Spacer(modifier = Modifier.width(4.dp))
+                                        androidx.compose.material3.Text(
+                                            text = listItem?.rating.toString(),
+                                            color = Color.Gray,
+                                            fontWeight = FontWeight.W500,
+                                            fontSize = 15.sp
+                                        )
+                                    }
+                                    androidx.compose.material3.Text(
+                                        text = "₹${listItem?.price.toString()}",
+                                        color = colorResource(R.color.purple),
+                                        fontSize = 16.sp,
+                                        fontWeight = FontWeight.Bold
+                                    )
 
+                                }
                             }
                         }
                     }
@@ -228,83 +221,4 @@ class OrderActivity : BaseActivity() {
 
         }
     }
-//    @Composable
-//    fun RecommendationFullList(list: List<EcomModel.Item?>?) {
-//        val context = LocalContext.current
-//        LazyVerticalGrid(
-//            columns = GridCells.Fixed(2),
-//            modifier = Modifier
-//                .padding(start = 8.dp, end = 2.dp)
-//                .fillMaxSize(),
-//            horizontalArrangement = Arrangement.spacedBy(2.dp)
-//        ) {
-//            items(list?.size ?: 0) { index ->
-//                val listItem = list?.get(index)
-//                Row(
-//                    modifier = Modifier.fillMaxSize().clickable{
-//                        val intent =  Intent(context, DetailActivity::class.java)
-//                        intent.putExtra("item", listItem)
-//                        ContextCompat.startActivity(context, intent, null)
-//
-//                    },
-//                    horizontalArrangement = Arrangement.spacedBy(8.dp)
-//                ) {
-//                    val context = LocalContext.current
-//                    Column(modifier = Modifier
-//                        .padding(8.dp)
-//                        .height(235.dp)) {
-//                        AsyncImage(
-//                            model = listItem?.picUrl?.firstOrNull() ?: "",
-//                            contentDescription = "",
-//                            modifier = Modifier
-//                                .height(175.dp)
-//                                .background(
-//                                    color = colorResource(R.color.lightGrey),
-//                                    shape = RoundedCornerShape(10.dp)
-//                                )
-//                                .padding(8.dp)
-//                                .clickable {
-//
-//                                },
-//                            contentScale = ContentScale.FillBounds
-//                        )
-//                        androidx.compose.material3.Text(
-//                            listItem?.title ?: "",
-//                            color = Color.Black,
-//                            fontSize = 16.sp,
-//                            fontWeight = FontWeight.W600,
-//                            maxLines = 1,
-//                            overflow = TextOverflow.Ellipsis,
-//                            modifier = Modifier.padding(top = 3.dp)
-//                        )
-//                        Row(modifier = Modifier
-//                            .padding(top = 2.dp)
-//                            .fillMaxSize(),
-//                            horizontalArrangement = Arrangement.SpaceBetween) {
-//                            Row {
-//                                Image(painter = painterResource(R.drawable.star), contentDescription = "Rating", modifier = Modifier.align(
-//                                    Alignment.CenterVertically))
-//                                Spacer(modifier = Modifier.width(8.dp))
-//                                Text(
-//                                    text = listItem?.rating.toString(),
-//                                    color = Color.Gray,
-//                                    fontSize = 15.sp
-//                                )
-//                            }
-//                            Text(
-//                                text = "₹${listItem?.price.toString()}",
-//                                color = colorResource(R.color.purple),
-//                                fontSize = 18.sp,
-//                                fontWeight = FontWeight.Bold
-//                            )
-//
-//                        }
-//                    }
-//                }
-//
-//            }
-//
-//        }
-//    }
-
 }
