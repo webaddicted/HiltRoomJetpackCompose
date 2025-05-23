@@ -47,4 +47,4 @@ This project showcases a scalable, maintainable, and modern Android application 
 ### Installation
 1. Clone the repository:
    ```bash  
-   git clone https://github.com/your-username/android-clean-architecture-news-app.git  
+   git clone https://github.com/webaddicted/HiltRoomJetpackCompose.git
