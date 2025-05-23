@@ -1,0 +1,413 @@
+{
+    "banner": [
+        {
+            "url": "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg"
+        },
+        {
+            "url": "https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg"
+        }
+    ],
+    "category": [
+        {
+            "id": 0,
+            "picUrl": "cat1",
+            "title": "Pc"
+        },
+        {
+            "id": 1,
+            "picUrl": "cat2",
+            "title": "Smartphone"
+        },
+        {
+            "id": 2,
+            "picUrl": "cat3",
+            "title": "Headphone"
+        },
+        {
+            "id": 3,
+            "picUrl": "cat4",
+            "title": "Console"
+        },
+        {
+            "id": 4,
+            "picUrl": "cat5",
+            "title": "Camera"
+        },
+        {
+            "id": 5,
+            "picUrl": "cat6",
+            "title": "Smartwatch"
+        }
+    ],
+    "items": [
+        {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "model": [
+                "Black",
+                "Purple",
+                "Pink",
+                "Blue"
+            ],
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A"
+        },
+        {
+            "categoryId": "0",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "core i3",
+                "core i5",
+                "core i7",
+                "core i8",
+                "core i9"
+            ],
+            "picUrl": [
+                "https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                "https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200",
+                "https://images.pexels.com/photos/8062289/pexels-photo-8062289.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            ],
+            "price": 550,
+            "rating": 4.7,
+            "showRecommended": true,
+            "title": "Business Laptop"
+        },
+        {
+            "categoryId": "0",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "core i3",
+                "core i5",
+                "core i7"
+            ],
+            "picUrl": [
+                "loptop3"
+            ],
+            "price": 550,
+            "rating": 4.7,
+            "showRecommended": false,
+            "title": "Laptop A34f"
+        },
+        {
+            "categoryId": "0",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "core i3",
+                "core i5",
+                "core i7"
+            ],
+            "picUrl": [
+                "loptop2.png"
+            ],
+            "price": 550,
+            "rating": 4.7,
+            "showRecommended": false,
+            "title": "Laptop 128Gig"
+        },
+        null,
+        {
+            "categoryId": "0",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "core i3",
+                "core i5",
+                "core i7"
+            ],
+            "picUrl": [
+                "loptop4.png"
+            ],
+            "price": 550,
+            "rating": 4.7,
+            "showRecommended": false,
+            "title": "laptop B2003"
+        },
+        null,
+        null,
+        {
+            "categoryId": "0",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "core i3",
+                "core i5",
+                "core i7"
+            ],
+            "picUrl": [
+                "loptop5.png"
+            ],
+            "price": 550,
+            "rating": 4.7,
+            "showRecommended": true,
+            "title": " Business Laptop "
+        },
+        {
+            "categoryId": "0",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "core i3",
+                "core i5",
+                "core i7"
+            ],
+            "picUrl": [
+                "loptop6.png"
+            ],
+            "price": 550,
+            "rating": 4.7,
+            "showRecommended": false,
+            "title": "Laptop MOH345"
+        },
+        {
+            "categoryId": "4",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "18-55mm",
+                "35-200mm",
+                "75-300mm"
+            ],
+            "picUrl": [
+                "cat3_1.png",
+                "cat3_2.png",
+                "cat3_3.png",
+                "cat3_4.png"
+            ],
+            "price": 750,
+            "rating": 4.5,
+            "showRecommended": false,
+            "title": "Digital Camera"
+        },
+        {
+            "categoryId": "3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua...",
+            "model": [
+                "Slim",
+                "Slim Digital"
+            ],
+            "picUrl": [
+                "cat4_1.png",
+                "cat4_2.png",
+                "cat4_3.png"
+            ],
+            "price": 500,
+            "rating": 4.9,
+            "showRecommended": false,
+            "title": "PS5"
+        }
+    ],
+    "cart": [
+        {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        },  {
+            "categoryId": "2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident, sunt in culpa qui officia deserunt .Excepteur sint occaecat",
+            "color":
+            "Pink",
+            "picUrl": [
+                "cat1_1.png"
+            ],
+            "price": 95,
+            "rating": 4.6,
+            "showRecommended": true,
+            "title": "Headphone 12A",
+            "count": 1
+        }
+    ]
+}

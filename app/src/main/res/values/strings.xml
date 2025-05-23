@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HiltRoomJetpackCompose</string>
+    <string name="intro_title">Welcome to <font color="#39c7a5">Digital Store\n a <font color="#39c7a5">Getway</font> to latest tech</font> </string>
+    <string name="intro_sub_title">Lorem Ipsum is simply dummy text of \nthe printing and type setting industry. Lorem \nIpsum has been the industry\'s standard\n15000</string>
 </resources>

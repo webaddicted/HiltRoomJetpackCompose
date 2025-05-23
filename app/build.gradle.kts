@@ -106,7 +106,11 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-//    Testing
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+// Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -134,7 +138,7 @@ dependencies {
     // Image Loading
     implementation(libs.coil.compose)
 
-    //     Room database
+    // Room database
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
@@ -142,5 +146,15 @@ dependencies {
 
     // Location Services
     implementation(libs.play.services.location)
+
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.28.0")
+    implementation("com.google.accompanist:accompanist-pager:0.28.0") // Check for the latest version
+// implementation("androidx.compose.runtime:runtime-livedata:x.x.x")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+// implementation("com.google.code.gson:gson:2.9.1")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("androidx.compose.foundation:foundation:1.5.0")
+    implementation("androidx.compose.ui:ui-tooling:1.8.0")
+
 
 }
