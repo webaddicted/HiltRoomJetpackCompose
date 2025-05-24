@@ -15,11 +15,11 @@ secretPropertiesFile.inputStream().use { input ->
 }
 
 android {
-    namespace = "com.webaddicted.hiltroomjetpackcompose"
+    namespace = "com.webaddicted.composemart"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.webaddicted.hiltroomjetpackcompose"
+        applicationId = "com.webaddicted.composemart"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
